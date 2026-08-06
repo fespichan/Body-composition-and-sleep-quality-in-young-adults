@@ -92,36 +92,6 @@
       "Version": "0.22.5",
       "Source": "Repository",
       "Repository": "CRAN"
-    },
-    "pROC": {
-      "Package": "pROC",
-      "Version": "1.18.5",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "caret": {
-      "Package": "caret",
-      "Version": "6.0.94",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "randomForest": {
-      "Package": "randomForest",
-      "Version": "4.7.1.1",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "themis": {
-      "Package": "themis",
-      "Version": "1.0.3",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "recipes": {
-      "Package": "recipes",
-      "Version": "1.3.3",
-      "Source": "Repository",
-      "Repository": "CRAN"
     }
   }
 }

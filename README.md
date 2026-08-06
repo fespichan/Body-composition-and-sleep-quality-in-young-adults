@@ -6,7 +6,7 @@ Quality in a Young-Adult University Sample"** (Universidad Nacional del Callao, 
 The design is **explanatory**: associations are reported as odds ratios with 95% confidence
 intervals. The study does **not** develop or evaluate a prediction model.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21814202.svg)](https://doi.org/10.5281/zenodo.21814202)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21814201.svg)](https://doi.org/10.5281/zenodo.21814201)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -18,13 +18,12 @@ version:
 
 > Espichán, F., Carbajal, L., & Siccha Macassi, A. L. (2026). *Analysis code for: Biological and
 > Anthropometric Correlates of Sleep Quality in a Young-Adult University Sample* [Computer
-> software]. Zenodo. https://doi.org/10.5281/zenodo.21814202
+> software]. Zenodo. https://doi.org/10.5281/zenodo.21814201
 
 To cite the exact state of the code rather than the latest, use the version DOI —
-[`10.5281/zenodo.21814202`](https://doi.org/10.5281/zenodo.21814202) for v1.2.
+[`10.5281/zenodo.21817433`](https://doi.org/10.5281/zenodo.21817433) for v1.2.
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
-
 
 ---
 
@@ -43,10 +42,6 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 | `psych` + `GPArotation` | 2.4.3 / 2026.4.1 | reliability (α, ω) |
 | `dplyr`, `ggplot2`, `patchwork`, `here`, `readxl` | | data handling, figures, paths |
 
-`renv.lock` also pins `pROC`, `caret`, `randomForest`, `themis` and `recipes`. **None of these is
-needed to run the pipeline** — they are required only by the `audit_*.R` diagnostics described
-below, which reproduce analyses that were tested and then removed from the study.
-
 `renv.lock` was written directly from the verified session versions rather than produced by
 `renv::snapshot()`, so it pins versions but carries no package hashes.
 
@@ -61,7 +56,6 @@ below, which reproduce analyses that were tested and then removed from the study
 ```
 R/                       analysis scripts, numbered in run order (NN_name.R)
   lib_*.R                libraries, sourced by the numbered scripts
-  audit_*.R              diagnostics — NOT part of the run order, kept for provenance
 scripts/                 QA runner (reads the private source workbook)
 data/raw/                de-identified input data
 data/processed/          intermediates (created on first run; gitignored)
@@ -119,15 +113,7 @@ If the data or the model change, these scripts stop rather than emit a silently 
 ### Not part of the run order
 
 - `R/lib_psqi_scoring.R`, `R/lib_reliability.R` — libraries, sourced by step 04 and the validator.
-- `R/audit_verify_sweep.R` — verification sweep. Six of its seven blocks are superseded or belong
-  to a section removed from the manuscript.
-- `R/audit_congenial_pilot.R` — retired diagnostic (block vs congenial predictor matrix). It reads
-  `master_clean.csv`, which is **not** the analysis input.
 - `scripts/validate_psqi_scoring.R` — validates the scoring layer against the canonical workbook.
-
-The `audit_*` scripts are kept deliberately. They are the record that circularity, uncongeniality,
-imputed-label inflation and VIF-as-imputation-artifact were each tested and refuted, rather than
-assumed away.
 
 ---
 
