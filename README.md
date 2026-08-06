@@ -192,16 +192,6 @@ from zero rather than to even. Step 03 documents and applies both conventions.
 two would round it to `1.00` — hemoglobin is reported as `1.43 (0.997–2.06)`, because `1.00–2.06`
 would read as excluding the null when it does not. The rule is asserted to fire.
 
-### A note on the legacy scripts
-
-The original 14 scripts are retained outside this repository for provenance and are **not**
-production code. Eleven of them require an in-memory object produced by another script and nine
-perform no disk read at all, so they only run inside a live session in which an earlier script has
-already been executed. They also use bare relative filenames and an implicit working directory. The
-pipeline in `R/` is a clean rebuild, not a copy.
-
----
-
 ## Ethics
 
 The study was reviewed by the Comité de Ética en Investigación, Vicerrectorado de Investigación,
