@@ -22,7 +22,10 @@ version:
 
 Every release is archived under that concept DOI with its own version DOI. To cite an exact state
 of the code rather than the latest, use the version DOI of the release you used — they are listed
-on the Zenodo record. The manuscript cites the version corresponding to its analyses.
+on the Zenodo record.
+
+**The manuscript cites [`10.5281/zenodo.21817904`](https://doi.org/10.5281/zenodo.21817904)
+(v1.3)**, the release that archives the code used for the reported analyses.
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
