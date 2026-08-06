@@ -6,7 +6,7 @@ Quality in a Young-Adult University Sample"** (Universidad Nacional del Callao, 
 The design is **explanatory**: associations are reported as odds ratios with 95% confidence
 intervals. The study does **not** develop or evaluate a prediction model.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21814201.svg)](https://doi.org/10.5281/zenodo.21814201)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21814202.svg)](https://doi.org/10.5281/zenodo.21814202)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
@@ -18,20 +18,13 @@ version:
 
 > Espichán, F., Carbajal, L., & Siccha Macassi, A. L. (2026). *Analysis code for: Biological and
 > Anthropometric Correlates of Sleep Quality in a Young-Adult University Sample* [Computer
-> software]. Zenodo. https://doi.org/10.5281/zenodo.21814201
+> software]. Zenodo. https://doi.org/10.5281/zenodo.21814202
 
 To cite the exact state of the code rather than the latest, use the version DOI —
-[`10.5281/zenodo.21814202`](https://doi.org/10.5281/zenodo.21814202) for v1.1.
+[`10.5281/zenodo.21814202`](https://doi.org/10.5281/zenodo.21814202) for v1.2.
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
-**Superseded predecessor deposit.** Concept DOI
-[`10.5281/zenodo.18868227`](https://doi.org/10.5281/zenodo.18868227), last version
-[`10.5281/zenodo.19457372`](https://doi.org/10.5281/zenodo.19457372) (v1.5.0, 7 April 2026),
-archives this work under the repository's former name. It holds the *original* scripts, which
-precede the audit that produced the present pipeline and include a predictive-modelling section the
-study no longer contains. It is a separate record series, kept for provenance; **do not** cite it
-as the code behind the current manuscript.
 
 ---
 
