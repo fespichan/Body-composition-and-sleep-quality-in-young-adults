@@ -20,8 +20,9 @@ version:
 > Anthropometric Correlates of Sleep Quality in a Young-Adult University Sample* [Computer
 > software]. Zenodo. https://doi.org/10.5281/zenodo.21814201
 
-To cite the exact state of the code rather than the latest, use the version DOI —
-[`10.5281/zenodo.21817433`](https://doi.org/10.5281/zenodo.21817433) for v1.2.
+Every release is archived under that concept DOI with its own version DOI. To cite an exact state
+of the code rather than the latest, use the version DOI of the release you used — they are listed
+on the Zenodo record. The manuscript cites the version corresponding to its analyses.
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 

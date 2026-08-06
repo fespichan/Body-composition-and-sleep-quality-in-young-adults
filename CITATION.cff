@@ -44,26 +44,16 @@ authors:
 repository-code: >-
   https://github.com/fespichan/Body-composition-and-sleep-quality-in-young-adults
 license: MIT
-version: '1.2'
-date-released: '2026-08-05'
+version: '1.3'
+date-released: '2026-08-06'
 
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21814201
     description: >-
       Concept DOI. Always resolves to the most recent version of this
-      archive; cite this when no specific version is required.
-  - type: doi
-    value: 10.5281/zenodo.21814202
-    description: Version v1.1 (5 August 2026).
-  - type: doi
-    value: 10.5281/zenodo.18868227
-    description: >-
-      Superseded predecessor deposit (concept DOI), archived under the
-      repository's former name. It holds the original scripts, which
-      precede the audit that produced the present pipeline and include a
-      predictive-modelling section the study no longer contains. Retained
-      for provenance; not the code behind the current manuscript.
+      archive. Each release also carries its own version DOI, listed on the
+      Zenodo record; cite that one to pin an exact state of the code.
 
 keywords:
   - sleep quality
